@@ -1,0 +1,20 @@
+---
+---
+
+@import 'skeleton';
+@import 'typography';
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+
+body {
+  h1 {
+    font-family: 'Bungee Inline';
+  }
+  nav {
+    li a {
+      font-family: $primary-nav-font;
+    }
+    li a.button {
+      font-family: $nav-button-font;
+    }
+  }
+}

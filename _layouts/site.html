@@ -1,0 +1,32 @@
+---
+layout: bare
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.html_title %}{{ page.html_title }} • {% endif %}GitHub Training</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ page.leadingpath }}/_assets/stylesheets/main.css">
+
+  <!-- <link rel="icon" type="image/x-icon" href="/favicon.png" /> -->
+  <!-- <script type="text/javascript" src="{{ page.leadingpath }}js/jquery.min.js"></script> -->
+
+  <!-- ## Scrollsnap-->
+  <!-- <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+  <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+  <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script> -->
+
+  <!-- ## Curriculum setup JS-->
+  <!-- <script src="{{ page.leadingpath }}_javascript/curriculum.js"></script> -->
+
+</head>
+
+<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} data-spy="scroll" data-target="#toc">
+
+  {% include nav.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+</body>
