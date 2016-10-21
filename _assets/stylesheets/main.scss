@@ -48,7 +48,7 @@ body {
     //              0 5px 10px rgba(0,0,0,.25),
     //              0 10px 10px rgba(0,0,0,.6),
     //              0 20px 20px rgba(0,0,0,.15);
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-color: #fff;
   }
   h1 span.title span.accent {
@@ -124,13 +124,13 @@ body {
           url(../images/img_background.jpg);
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     z-index: 2;
     // transition: opacity 1s ease-in-out;
     .intro {
       text-align: center;
-      padding-top: 12.5vh;
+      padding-top: 9vh;
       color: #fff;
       p {
         margin-bottom: 0.25vh;
@@ -141,12 +141,12 @@ body {
     }
     .countdown-container {
       margin: auto;
-      margin-top: 3vh;
+      // margin-top: 3vh;
       .countdown {
         padding: 0.5vh 2.5vw;
         border: 3px solid #fff;
         margin: auto;
-        width: 30vw;
+        width: 37.5vw;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -154,6 +154,7 @@ body {
         justify-content: space-around;
         text-align: center;
         li.cd-i {
+
           span {
             font-family: $site-title-font;
             font-size: $countdown-number-size;
@@ -407,18 +408,33 @@ body {
     height: 45vh;
     width: 100vw;
     background-color: #003366;
-    .ix-bottom-logo img {
-      position: absolute;
-      width: 3.5vw;
-      height: auto;
-      left: 12%;
-    }
     .footer-container {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
       padding: 3vh 10vw;
-
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column;
+        width: 35vw;
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row wrap;
+        }
+      }
+      .middle {
+        width: 1px;
+        border: 1px solid white;
+      }
+      .right {
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row;
+        width: 35vw;
+      }
     }
   }
 }
