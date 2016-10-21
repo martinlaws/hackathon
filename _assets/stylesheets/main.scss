@@ -1,9 +1,19 @@
 ---
 ---
-
 @import 'skeleton';
 @import 'typography';
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:300,700,900');
+
+// @media all and (max-width: 750px) {
+//   nav ul {
+//     /* On small screens, we are no longer using row direction but column */
+//     flex-direction: column !important;
+//     li {
+//       background-color: #fff;
+//     }
+//   }
+// }
+
 body {
   margin: 0;
   padding: 0;
@@ -16,16 +26,26 @@ body {
   }
   nav {
     position: fixed;
-    .logo-badge {
-      background-color: #fff;
-      margin-left: 25vw;
-      width: 5vw;
-      height: 5vh;
-    }
+    z-index: 3;
+    // .logo-badge {
+    //   width: 7vw;
+    //   background-color: #fff;
+    //   margin-left: 17.5vw;
+    //   display: inline;
+    // }
+    // .logo-badge:after {
+    //   content: "";
+    //   display: block;
+    //   padding-bottom: 100%;
+    // }
     ul {
       text-align: right;
       list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
       li {
+        margin: auto 0;
         display: inline;
         a {
           color: #fff;
@@ -47,45 +67,111 @@ body {
     background-image: url(http://placekitten.com/1920/1080);
     background-position: center;
     background-size: cover;
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
+    // transition: opacity 1s ease-in-out;
     .intro {
       text-align: center;
-      padding-top: 17.5vh;
+      padding-top: 15vh;
       color: #fff;
       p {
         margin-bottom: 0.25vh;
       }
-      // img {
-      //   margin: auto;
-      //   height: inherit;
-      //   width: inherit;
-      //   max-height: 55vh;
-      //   max-width: 100vw;
-      // }
-      // .title {
-      //   // background-color: green;
-      //   // height: 20%;
-      //   width: 20vw;
-      //   margin: auto;
-      // }
+    }
+    .countdown-container {
+      margin: auto;
+      margin-top: 5vh;
+      .countdown {
+        padding: 1vh 2.5vw;
+        border: 3px solid #fff;
+        margin: auto;
+        width: 35vw;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        justify-content: space-around;
+        text-align: center;
+        li.cd-i {
+          color: grey;
+          font-family: $countdown-font;
+          font-size: $countdown-number-size;
+          span {
+            font-size: $countdown-number-size;
+          }
+          span span {
+            display: block;
+            font-size: $countdown-label-size;
+          }
+        }
+      }
     }
   }
   .master-container {
-    // margin-top: -10vh;
-    background-color: rgb(191, 191, 191);
-    .container {
-      background-color: grey;
-      display: flex;
+    font-size: $body-font-size;
+    background-color: #ededed;
+    .container:not(:first-child) {
+      margin-top: 2.5vh;
     }
-    .container.first {
+    .panel {
+      background-color: #fff;
+      padding: 3vh 3vw;
+    }
+    .container {
       top: -10vh;
+      h3 {
+        mark {
+          background-color: red;
+        }
+      }
+      section.triple {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        article {
+          width: 30%;
+          h5 {
+            display: block;
+          }
+        }
+        article.profile-card {
+          height: 50vh;
+          width: 33%;
+          background-color: #fff;
+          display: flex;
+          flex-flow: row;
+          justify-content: flex-start;
+          img {
+            width: 70%;
+            height: auto;
+            flex-basis: 40% 100%;
+            padding: 2%;
+          }
+        }
+      }
+      section.double {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        article:first-child {
+          width: 32%;
+          h5 {
+            display: block;
+          }
+        }
+        article:nth-child(2) {
+          flex-basis: 65%;
+          margin-left: 3%;
+        }
+      }
     }
     div.registration-info{
+      background-color: rebeccapurple;
       width: 100vw;
       text-align: center;
       display: flex;
       align-items: center;
+      margin: 0 0 20vh 0;
       .individual {
         background-color: green;
         height: 25vh;
