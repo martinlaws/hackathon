@@ -18,6 +18,9 @@
 body {
   margin: 0;
   padding: 0;
+  * {
+    box-sizing: border-box;
+  }
   a.button.button-primary {
     background-color: $secondary;
     border-color: $secondary;
@@ -201,6 +204,7 @@ body {
           font-family: $site-title-font;
           font-size: 1.5rem;
           color: #fff;
+          z-index: 2;
           span.badge-byline {
             font-family: $countdown-label-font;
             font-size: 1.35rem;
@@ -224,7 +228,9 @@ body {
         img.iphone-image {
           position: relative;
           top: 7px;
-          object-position: -143px;
+          // max-height: 25vh;
+          // width: auto;
+          // object-position: -143px;
         }
       }
     }
@@ -362,13 +368,17 @@ body {
 
 @media (max-width: 420px) {
   body {
+    h1 span.title {
+      font-size: 1em;
+    }
     .master-container {
-      .container {
+      .container, .panel {
         section {
           flex-flow: column;
           &.triple, &.double {
             article, article:first-child, article:nth-child(2), article:nth-child(3) {
               width: 100%;
+              margin: 0;
             }
           }
           &.triple {
@@ -384,13 +394,29 @@ body {
               width: 75vw;
             }
           }
+          &.registration {
+            margin-left: -7.5vw;
+            article {
+              width: 100%;
+            }
+          }
         }
-        &.panel.prizes {
-          .prize-image {
+        .prizes {
+          width: 100%;
+          padding: 3vh;
+          .prize-image, .badge-container {
+            width: 100%;
+            text-align: center;
+            .badge-content {
+              top: 35%;
+              left: 55%;
+            }
             img.iphone-image {
               position: relative;
               top: 10px;
               object-position: inherit;
+              width: auto;
+              max-height: 35vh;
             }
           }
         }
