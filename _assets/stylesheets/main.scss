@@ -3,18 +3,103 @@
 
 @import 'skeleton';
 @import 'typography';
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
-
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:300,700,900');
 body {
+  margin: 0;
+  padding: 0;
+  font-family: $body-font;
   h1 {
-    font-family: 'Bungee Inline';
+    font-family: $site-title-font;
+  }
+  h3 {
+    font-family: $section-title-font;
   }
   nav {
-    li a {
-      font-family: $primary-nav-font;
+    position: fixed;
+    .logo-badge {
+      background-color: #fff;
+      margin-left: 25vw;
+      width: 5vw;
+      height: 5vh;
     }
-    li a.button {
-      font-family: $nav-button-font;
+    ul {
+      text-align: right;
+      list-style-type: none;
+      li {
+        display: inline;
+        a {
+          color: #fff;
+          font-size: $nav-item-size;
+          font-family: $primary-nav-font;
+          text-decoration: none;
+          margin: 1vh 0.5vw;
+        }
+        a.button.button-primary {
+          text-transform: none;
+          font-family: $nav-button-font;
+          font-size: $nav-button-font-size;
+          margin-right: 1vw;
+        }
+      }
+    }
+  }
+  header {
+    background-image: url(http://placekitten.com/1920/1080);
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    width: 100vw;
+    .intro {
+      text-align: center;
+      padding-top: 10vh;
+      color: #fff;
+      p {
+        margin-bottom: 0.25vh;
+      }
+      // img {
+      //   margin: auto;
+      //   height: inherit;
+      //   width: inherit;
+      //   max-height: 55vh;
+      //   max-width: 100vw;
+      // }
+      // .title {
+      //   // background-color: green;
+      //   // height: 20%;
+      //   width: 20vw;
+      //   margin: auto;
+      // }
+    }
+  }
+  .master-container {
+    // margin-top: -10vh;
+    background-color: rgb(191, 191, 191);
+    .container {
+      background-color: grey;
+      display: flex;
+    }
+    .container.first {
+      top: -10vh;
+    }
+    div.registration-info{
+      width: 100vw;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      .individual {
+        margin: 0px 0px;
+        background-color: green;
+        height: 25vh;
+        display: inline-block;
+        width: 50vw;
+      }
+      .team {
+        margin: 0px 0px;
+        background-color: red;
+        height: 25vh;
+        display: inline-block;
+        width: 50vw;
+      }
     }
   }
 }

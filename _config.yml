@@ -26,6 +26,9 @@ include:
 # - _javascript
 sass:
   sass_dir: _assets/stylesheets/
-  
+
 # Custom site configuration
 lang: en
+
+gems:
+  - octopress-autoprefixer

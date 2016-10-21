@@ -23,10 +23,9 @@ layout: bare
 </head>
 
 <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} data-spy="scroll" data-target="#toc">
+    {% include nav.html %}
 
-  {% include nav.html %}
+    {{ content }}
 
-  {{ content }}
-
-  {% include footer.html %}
+    {% include footer.html %}
 </body>
