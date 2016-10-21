@@ -33,18 +33,18 @@ body {
     padding: 0 2vw;
     margin-bottom: 1vh;
     // color: white;
-    text-shadow: 0 1px 0 #ababab,
-                 0 2px 0 #a5a5a5,
-                 0 3px 0 #8c8c8c,
-                 0 4px 0 #797979,
-                 0 5px 0 #4a4a4a,
-                 0 6px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 1px 3px rgba(0,0,0,.3),
-                 0 3px 5px rgba(0,0,0,.2),
-                 0 5px 10px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.6),
-                 0 20px 20px rgba(0,0,0,.15);
+    // text-shadow: 0 1px 0 #ababab,
+    //              0 2px 0 #a5a5a5,
+    //              0 3px 0 #8c8c8c,
+    //              0 4px 0 #797979,
+    //              0 5px 0 #4a4a4a,
+    //              0 6px 1px rgba(0,0,0,.1),
+    //              0 0 5px rgba(0,0,0,.1),
+    //              0 1px 3px rgba(0,0,0,.3),
+    //              0 3px 5px rgba(0,0,0,.2),
+    //              0 5px 10px rgba(0,0,0,.25),
+    //              0 10px 10px rgba(0,0,0,.6),
+    //              0 20px 20px rgba(0,0,0,.15);
     font-size: 1.5em;
     background-color: #fff;
   }
@@ -115,7 +115,7 @@ body {
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3)
           ),
-          url(http://placekitten.com/1920/1080);
+          url(http://placekitten.com/g/1920/1080);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -209,6 +209,7 @@ body {
         }
       }
       h3 mark {
+        padding: 0 1.5vw;
         background-color: #fff;
         color: $primary-nav-color;
       }
@@ -233,7 +234,7 @@ body {
         mark {
           color: #fff;
           background-color: $primary;
-          padding: 0 1.5vh;
+          padding: 0 1.5vw;
         }
       }
       section {
@@ -243,7 +244,8 @@ body {
           h5 {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 1.25em;
+            font-size: 1.1em;
+            color: $primary;
           }
         }
       }
