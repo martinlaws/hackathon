@@ -1,4 +1,12 @@
 body {
+  .ix-logo {
+    img {
+      position: absolute;
+      width: 3.5vw;
+      height: auto;
+      left: 12%;
+    }
+  }
   nav.responsive {
     ul {
     	list-style-type:none;
@@ -32,7 +40,11 @@ body {
         display: block;
     }
 
-    @media screen and (max-width : 760px){
+
+    @media screen and (max-width: 850px){
+      .ix-logo img {
+        visibility: hidden;
+      }
       label.show-menu {
         font-family: $primary-nav-font;
       }
@@ -65,6 +77,11 @@ body {
     		display:block;
         border-bottom: 2px solid #371f73;
     	}
+    }
+  }
+  @media screen and (max-width: 1060px){
+    .ix-logo img {
+      left: 2vw;
     }
   }
 }

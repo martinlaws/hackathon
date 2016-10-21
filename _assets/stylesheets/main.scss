@@ -118,7 +118,7 @@ body {
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3)
           ),
-          url(http://placekitten.com/g/1920/1080);
+          url(../images/img_background.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -131,6 +131,9 @@ body {
       color: #fff;
       p {
         margin-bottom: 0.25vh;
+      }
+      p.index-exchange {
+        font-size: 1.15em;
       }
     }
     .countdown-container {
@@ -167,6 +170,7 @@ body {
     margin-top: -3vh;
     font-size: $body-font-size;
     background-color: $main-container-background;
+    padding-bottom: 5vh;
     .container:first-child {
       top: -12.5vh;
     }
@@ -185,10 +189,16 @@ body {
       padding: 3vh 3vw;
     }
     section.prizes {
-      padding: 3vh 32vw;
+      padding: 3vh 27vw;
       display: flex;
       flex-flow: row;
       align-items: flex-start;
+      // height: 65vh;
+      // max-width: 98.5vw;
+      // background-image: url(../images/prize_background.png);
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      // background-position: center;
       background-color: $secondary;
       position: relative;
       .badge-container {
@@ -197,7 +207,7 @@ body {
           transform: rotate(-25deg);
           position: absolute;
           top: 1%;
-          left: 65%;
+          left: 74%;
           background: $primary;
           border-radius: 50%;
           padding: 2vh 0.5vw;
@@ -219,15 +229,21 @@ body {
       }
       h5 {
         color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.1em;
+        margin-right: 3vw;
+      }
+      p {
+        color: #fff;
       }
       .prize-image {
-        flex: 1 0 0;
         display: block;
         // max-width: 5vw;
         // max-height: 250vh;
         img.iphone-image {
           position: relative;
-          top: 7px;
+          top: -2vh;
           // max-height: 25vh;
           // width: auto;
           // object-position: -143px;
@@ -274,7 +290,9 @@ body {
             padding: 1% 3%;
           }
           img {
-            padding-top: 3%;
+            padding: 0;
+            height: 20vh;
+            width: 100%;
             object-fit: cover;
           }
           h6 {
