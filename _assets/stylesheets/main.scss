@@ -26,12 +26,19 @@ body {
     border-color: lighten($secondary, 10%);
   }
   font-family: $body-font;
-  h1.title {
+  h1 span.title {
     font-family: $site-title-font;
+    color: $secondary;
+    padding: 0 2vw;
     margin-bottom: 1vh;
+    font-size: 1.5em;
+    background-color: #fff;
   }
   h3 {
     font-family: $section-title-font;
+    mark {
+      font-size: 3rem;
+    }
   }
   nav {
     position: fixed;
@@ -76,7 +83,7 @@ body {
           margin: 1vh 0.5vw;
         }
         a:hover {
-          color: $primary;
+          color: $secondary;
         }
         a.button.button-primary {
           text-transform: none;
@@ -88,7 +95,7 @@ body {
     }
   }
   header {
-    background-image: url(http://placekitten.com/1920/1080);
+    background-image: url(http://placekitten.com/g/1920/1080);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -110,7 +117,7 @@ body {
         padding: 0.5vh 2.5vw;
         border: 3px solid #fff;
         margin: auto;
-        width: 35vw;
+        width: 30vw;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -134,21 +141,59 @@ body {
     }
   }
   .master-container {
+    margin-top: -3vh;
     font-size: $body-font-size;
     background-color: $main-container-background;
+    .container:first-child {
+      top: -12.5vh;
+    }
     .container:not(:first-child) {
+      position: relative;
       margin-top: 2.5vh;
     }
+    .container:nth-child(2) {
+      margin-top: -10vh;
+    }
     .panel {
+      margin-top: 3vh;
+    }
+    .container.panel {
       background-color: #fff;
       padding: 3vh 3vw;
     }
-    .container.panel.prizes {
-      flex: 1 2 0;
-      background-color: $primary;
+    section.prizes {
+      padding: 3vh 32vw;
+      display: flex;
+      flex-flow: row;
+      align-items: flex-start;
+      background-color: $secondary;
       position: relative;
+      .badge-container {
+        text-align: center;
+        span.badge-content {
+          transform: rotate(-25deg);
+          position: absolute;
+          top: 1%;
+          left: 65%;
+          background: $primary;
+          border-radius: 50%;
+          padding: 2vh 0.5vw;
+          font-family: $site-title-font;
+          font-size: 1.5rem;
+          color: #fff;
+          span.badge-byline {
+            font-family: $countdown-label-font;
+            font-size: 1.35rem;
+            display: block;
+          }
+        }
+      }
       h3 mark {
         background-color: #fff;
+        color: $primary-nav-color;
+      }
+      h5 {
+        color: #fff;
       }
       .prize-image {
         flex: 1 0 0;
@@ -163,7 +208,7 @@ body {
       }
     }
     .container {
-      top: -15vh;
+      // top: -15vh;
       h3 {
         mark {
           color: #fff;
@@ -189,12 +234,12 @@ body {
 
         }
         article.profile-card {
-          height: 70vh;
-          width: 33%;
+          height: auto;
+          width: 32.25%;
           background-color: #fff;
           display: flex;
           flex-flow: column;
-          justify-content: flex-start;
+          justify-content: space-between;;
           position: static;
           clear: both;
           * {
@@ -245,6 +290,16 @@ body {
           width: 25vw;
           margin: auto;
         }
+      }
+      section.registration {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        flex-basis: 33vw;
+        background-color: $primary;
+        margin-left: -25vw;
+        width: 100vw;
+        article.
       }
     }
     div.registration-info{
