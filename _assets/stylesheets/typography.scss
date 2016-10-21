@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:300,700,900');
+
 // Headings
 $site-title-font: 'Bungee Inline', cursive;
 $section-title-font: 'Bungee Inline', cursive;
 
 // Navigation Bar
 $primary-nav-font: 'Bungee Inline', cursive;
+$primary-nav-color: #000;
+$primary-nav-background-color: #fff;
 $nav-item-size: 0.95em;
 $nav-button-font: 'Source Sans Pro', sans-serif;
 $nav-button-font-size: 1.1em;
 
 // Countdown Timer
-$countdown-font: 'Source Sans Pro', sans-serif;
-$countdown-number-size: 1.5em;
+$countdown-label-font: 'Source Sans Pro', sans-serif;
+$countdown-number-size: 2.5em;
 $countdown-label-size: 0.75em;
+$countdown-color: #fff;
 
 // Body
 $body-font: 'Source Sans Pro', sans-serif;
