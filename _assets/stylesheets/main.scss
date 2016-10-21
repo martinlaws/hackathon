@@ -27,12 +27,12 @@ body {
     border-color: lighten($secondary, 10%);
   }
   font-family: $body-font;
-  h1.title {
+  h1 span.title {
     font-family: $site-title-font;
-    // color: $secondary;
-    // padding: 0 2vw;
+    color: $secondary;
+    padding: 0 2vw;
     margin-bottom: 1vh;
-    color: white;
+    // color: white;
     text-shadow: 0 1px 0 #ababab,
                  0 2px 0 #a5a5a5,
                  0 3px 0 #8c8c8c,
