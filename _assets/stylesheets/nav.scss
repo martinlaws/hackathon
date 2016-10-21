@@ -1,0 +1,66 @@
+body {
+  nav.responsive {
+    ul {
+    	list-style-type:none;
+    	margin:0;
+    	padding:0;
+    	position: absolute;
+      right: 0;
+    }
+
+    li {
+    	display:inline-block;
+    	float: left;
+    	margin-right: 1px;
+    }
+
+    .show-menu {
+    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	text-decoration: none;
+    	color: #fff;
+    	background: #503690;
+    	text-align: center;
+    	padding: 10px 0;
+    	display: none;
+    }
+
+    input[type=checkbox]{
+        display: none;
+    }
+
+    input[type=checkbox]:checked ~ ul{
+        display: block;
+    }
+
+    @media screen and (max-width : 760px){
+    	ul {
+    		position: static;
+    		display: none;
+        margin-top: -5px;
+
+    	}
+    	li {
+    		margin: 0px;
+        background: #fff;
+        text-align: center;
+        padding: 8px 0;
+        .button {
+          width: 90%;
+          margin: 0 auto;
+        }
+        &:last-of-type {
+              box-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+        }
+    	}
+    	ul li, li a {
+    		width: 100%;
+        margin: 0px;
+
+    	}
+    	.show-menu {
+    		display:block;
+        border-bottom: 2px solid #371f73;
+    	}
+    }
+  }
+}
