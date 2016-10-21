@@ -51,6 +51,9 @@ body {
     font-size: 1.5em;
     background-color: #fff;
   }
+  h1 span.title span.accent {
+    color: $primary;
+  }
   h3 {
     font-family: $section-title-font;
     // mark {
@@ -170,7 +173,7 @@ body {
     margin-top: -3vh;
     font-size: $body-font-size;
     background-color: $main-container-background;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     .container:first-child {
       top: -12.5vh;
     }
@@ -225,12 +228,12 @@ body {
       h3 mark {
         padding: 0 1.5vw;
         background-color: #fff;
-        color: $primary-nav-color;
+        color: $primary;
       }
       h5 {
         color: #fff;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 1.1em;
         margin-right: 3vw;
       }
@@ -382,10 +385,41 @@ body {
       }
     }
   }
+  .careers {
+    width: 100vw;
+    height: 20vh;
+    background-image: url(../images/careers_background.jpg);
+    background-position: center;
+    text-align: center;
+    section {
+      padding-top: 4.5vh;
+      h5 {
+        font-weight: bold;
+        color: #fff;
+      }
+      .button.button-primary {
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
   footer {
     height: 45vh;
     width: 100vw;
     background-color: #003366;
+    .ix-bottom-logo img {
+      position: absolute;
+      width: 3.5vw;
+      height: auto;
+      left: 12%;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      padding: 3vh 10vw;
+
+    }
   }
 }
 
@@ -393,6 +427,9 @@ body {
   body {
     h1 span.title {
       font-size: 1em;
+    }
+    h1 span.accent {
+      color: $primary;
     }
     .master-container {
       .container, .panel {
