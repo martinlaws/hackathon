@@ -1,12 +1,11 @@
 # For Atom Feed
-domain: training.github.com
-author: GitHub Training Team
-email: training@github.com
-title: GitHub Training
+author: Index Exchange
+email: martin.laws@indexexchange.com
+title: Hack Index
 
 # standard jekyll configuration
 
-# baseurl: /kit
+baseurl: /hackathon
 # parentsite: https://services.github.com
 # permalink: /articles/:title
 exclude:
