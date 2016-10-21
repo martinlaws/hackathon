@@ -137,7 +137,7 @@ body {
         padding: 0.5vh 2.5vw;
         border: 3px solid #fff;
         margin: auto;
-        width: 35vw;
+        width: 30vw;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -221,9 +221,9 @@ body {
         // max-width: 5vw;
         // max-height: 250vh;
         img.iphone-image {
-          position: absolute;
-          top: 80px;
-          width: 10px;
+          position: relative;
+          top: 7px;
+          object-position: -143px;
         }
       }
     }
@@ -259,7 +259,7 @@ body {
           background-color: #fff;
           display: flex;
           flex-flow: column;
-          justify-content: space-between;;
+          justify-content: space-between;
           position: static;
           clear: both;
           * {
@@ -267,6 +267,7 @@ body {
           }
           img {
             padding-top: 3%;
+            object-fit: cover;
           }
           h6 {
             font-weight: 700;
@@ -352,6 +353,45 @@ body {
         height: 25vh;
         display: inline-block;
         width: 50vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    .master-container {
+      .container {
+        section {
+          flex-flow: column;
+          &.triple, &.double {
+            article, article:first-child, article:nth-child(2), article:nth-child(3) {
+              width: 100%;
+            }
+          }
+          &.triple {
+            article.profile-card {
+              height: auto;
+            }
+          }
+          img {
+            max-width: 100%;
+          }
+          &.single {
+            a {
+              width: 75vw;
+            }
+          }
+        }
+        &.panel.prizes {
+          .prize-image {
+            img.iphone-image {
+              position: relative;
+              top: 10px;
+              object-position: inherit;
+            }
+          }
+        }
       }
     }
   }
