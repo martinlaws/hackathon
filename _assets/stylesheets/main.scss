@@ -47,11 +47,11 @@ body {
     background-image: url(http://placekitten.com/1920/1080);
     background-position: center;
     background-size: cover;
-    height: 55vh;
+    height: 75vh;
     width: 100vw;
     .intro {
       text-align: center;
-      padding-top: 10vh;
+      padding-top: 17.5vh;
       color: #fff;
       p {
         margin-bottom: 0.25vh;
@@ -87,14 +87,12 @@ body {
       display: flex;
       align-items: center;
       .individual {
-        margin: 0px 0px;
         background-color: green;
         height: 25vh;
         display: inline-block;
         width: 50vw;
       }
       .team {
-        margin: 0px 0px;
         background-color: red;
         height: 25vh;
         display: inline-block;

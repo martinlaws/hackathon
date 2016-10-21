@@ -11,6 +11,21 @@ layout: site
     <p><b>In Partnership with Index Exchange</b></p>
     <br>
   </div>
+  <div>
+    <script type="text/javascript">
+    $("#getting-started")
+    .countdown("2017/01/01", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
+  </script>
+  </div>
+  <ul class="countdown">
+    <li class="days">{{('now' | date: "%D" ) - "11/18"}}<span class="countdown-label">Days</span></li>
+    <li class="hours">15<span class="countdown-label">Hours</span></li>
+    <li class="minutes"><span class="countdown-label">Minutes</span></li>
+  </div>
 </header>
 <div class="master-container">
   <div class="container first">
