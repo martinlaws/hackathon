@@ -4,6 +4,7 @@
 @import 'typography';
 @import 'variables';
 @import 'nav';
+@import 'footer';
 
 // @media all and (max-width: 750px) {
 //   nav ul {
@@ -134,6 +135,9 @@ body {
       color: #fff;
       p {
         margin-bottom: 0.25vh;
+        span.arial {
+          font-family: sans-serif;
+        }
       }
       p.index-exchange {
         font-size: 1.15em;
@@ -388,7 +392,7 @@ body {
   }
   .careers {
     width: 100vw;
-    height: 20vh;
+    height: 22.5vh;
     background-image: url(../images/careers_background.jpg);
     background-position: center;
     text-align: center;
@@ -402,38 +406,9 @@ body {
         background-color: $primary;
         border-color: $primary;
       }
-    }
-  }
-  footer {
-    height: 45vh;
-    width: 100vw;
-    background-color: #003366;
-    .footer-container {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-      padding: 3vh 10vw;
-      .left {
-        display: flex;
-        justify-content: flex-start;
-        flex-flow: column;
-        width: 35vw;
-        ul {
-          list-style-type: none;
-          display: flex;
-          justify-content: flex-start;
-          flex-direction: row wrap;
-        }
-      }
-      .middle {
-        width: 1px;
-        border: 1px solid white;
-      }
-      .right {
-        display: flex;
-        justify-content: flex-end;
-        flex-flow: row;
-        width: 35vw;
+      a.button.button-primary:hover {
+        background-color: lighten($primary, 10%);
+        border-color: lighten($primary, 10%);
       }
     }
   }
