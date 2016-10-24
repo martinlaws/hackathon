@@ -98,7 +98,8 @@ body {
           url(../images/img_background.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    // height: auto;
+    padding-bottom: 12.5%;
     width: 100vw;
     z-index: 2;
     .intro {
@@ -125,11 +126,11 @@ body {
         list-style-type: none;
         display: flex;
         align-items: center;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: space-around;
         text-align: center;
         li.cd-i {
-
+          padding: 0 2.5%;
           span {
             font-family: $site-title-font;
             font-size: $countdown-number-size;
@@ -367,15 +368,28 @@ body {
   }
 }
 
+@media (max-width: 1160px) {
+  body {
+    header {
+      height: auto;
+      padding-bottom: 25%;
+    }
+  }
+}
+
 @media (max-width: 420px) {
   body {
     header {
       height: auto;
+      padding-bottom: 25%;
       .countdown-container {
         .countdown {
           display: flex;
           flex-flow: column;
           justify-content: center;
+          li.cd-i {
+            font-size: 0.85rem;
+          }
         }
       }
     }

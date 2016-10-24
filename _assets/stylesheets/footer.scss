@@ -85,3 +85,52 @@ footer {
     }
   }
 }
+
+@media (max-width: 800px) {
+  footer {
+    width: 100vw;
+    .footer-container {
+      flex-flow: column;
+      .left {
+        width: 100%;
+        ul.ix-links {
+          li > a {
+            font-size: 3rem;
+          }
+        }
+        ul {
+          justify-content: center;
+        }
+        .social {
+          text-align: center;
+          ul {
+            width: 100%;
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        height: 1px;
+      }
+      .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul {
+          width: 40%;
+          justify-content: center;
+          text-align: center;
+          flex-flow: row wrap;
+          li {
+            width: 100%;
+            margin-bottom: 35%;
+          }
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
