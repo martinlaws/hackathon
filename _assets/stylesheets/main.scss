@@ -363,6 +363,16 @@ body {
 
 @media (max-width: 420px) {
   body {
+    header {
+      height: auto;
+      .countdown-container {
+        .countdown {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+        }
+      }
+    }
     h1 span.title {
       font-size: 1em;
     }
