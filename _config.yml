@@ -6,8 +6,7 @@ title: Hack Index
 # standard jekyll configuration
 url: http://martinlaws.github.io
 baseurl: /hackathon
-# parentsite: https://services.github.com
-# permalink: /articles/:title
+
 exclude:
 - bin
 - config.rb
@@ -22,7 +21,7 @@ exclude:
 
 include:
 - _assets
-# - _javascript
+
 sass:
   sass_dir: _assets/stylesheets/
 

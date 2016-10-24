@@ -6,16 +6,6 @@
 @import 'nav';
 @import 'footer';
 
-// @media all and (max-width: 750px) {
-//   nav ul {
-//     /* On small screens, we are no longer using row direction but column */
-//     flex-direction: column !important;
-//     li {
-//       background-color: #fff;
-//     }
-//   }
-// }
-
 body {
   margin: 0;
   padding: 0;
@@ -36,7 +26,6 @@ body {
     color: $secondary;
     padding: 0 2vw;
     margin-bottom: 1vh;
-    // color: white;
     // text-shadow: 0 1px 0 #ababab,
     //              0 2px 0 #a5a5a5,
     //              0 3px 0 #8c8c8c,
@@ -57,32 +46,10 @@ body {
   }
   h3 {
     font-family: $section-title-font;
-    // mark {
-    //   font-size: 3rem;
-    // }
   }
   nav {
     position: fixed;
     z-index: 1;
-    // background-color: purple;
-    // .background {
-    //   // z-index: 1;
-    //   background-color: purple;
-    //   display: flex;
-    //   // width: 100vw;
-    //   max-height: 10vh;
-    // }
-    // .logo-badge {
-    //   width: 7vw;
-    //   background-color: #fff;
-    //   margin-left: 17.5vw;
-    //   display: inline;
-    // }
-    // .logo-badge:after {
-    //   content: "";
-    //   display: block;
-    //   padding-bottom: 100%;
-    // }
     ul {
       text-align: right;
       list-style-type: none;
@@ -128,7 +95,6 @@ body {
     height: 90vh;
     width: 100vw;
     z-index: 2;
-    // transition: opacity 1s ease-in-out;
     .intro {
       text-align: center;
       padding-top: 9vh;
@@ -145,7 +111,6 @@ body {
     }
     .countdown-container {
       margin: auto;
-      // margin-top: 3vh;
       .countdown {
         padding: 0.5vh 2.5vw;
         border: 3px solid #fff;
@@ -201,12 +166,6 @@ body {
       display: flex;
       flex-flow: row;
       align-items: flex-start;
-      // height: 65vh;
-      // max-width: 98.5vw;
-      // background-image: url(../images/prize_background.png);
-      // background-size: contain;
-      // background-repeat: no-repeat;
-      // background-position: center;
       background-color: $secondary;
       position: relative;
       .badge-container {
@@ -247,14 +206,9 @@ body {
       }
       .prize-image {
         display: block;
-        // max-width: 5vw;
-        // max-height: 250vh;
         img.iphone-image {
           position: relative;
           top: -2vh;
-          // max-height: 25vh;
-          // width: auto;
-          // object-position: -143px;
         }
       }
     }
@@ -273,7 +227,7 @@ body {
         article {
           h5 {
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 1.1em;
             color: $primary;
           }
@@ -304,7 +258,7 @@ body {
             object-fit: cover;
           }
           h6 {
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.2em;
             margin: 0;
             padding: 0 3%;
@@ -351,7 +305,6 @@ body {
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        // flex-basis: 45vw;
         background-color: $primary;
         margin-left: -25vw;
         width: 100vw;
@@ -362,12 +315,6 @@ body {
 
         }
       }
-      // section:nth-child(1) {
-      //   border-right: 1px solid black;
-      // }
-      // section:nth-child(2) {
-      //
-      // }
     }
     div.registration-info{
       background-color: rebeccapurple;
