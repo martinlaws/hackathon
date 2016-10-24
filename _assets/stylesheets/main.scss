@@ -44,7 +44,7 @@ body {
   h1 span.title span.accent {
     color: $primary;
   }
-  h3, h5 {
+  h3, h5.dates {
     font-family: $section-title-font;
     span.day-1 {
       padding-right: 1.5%;
