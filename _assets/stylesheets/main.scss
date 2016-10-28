@@ -21,25 +21,10 @@ body {
     border-color: lighten($secondary, 10%);
   }
   font-family: $body-font;
-  h1 span.title {
-    font-family: $site-title-font;
-    color: $secondary;
+  img.title {
     padding: 0 2vw;
-    margin-bottom: 1vh;
-    // text-shadow: 0 1px 0 #ababab,
-    //              0 2px 0 #a5a5a5,
-    //              0 3px 0 #8c8c8c,
-    //              0 4px 0 #797979,
-    //              0 5px 0 #4a4a4a,
-    //              0 6px 1px rgba(0,0,0,.1),
-    //              0 0 5px rgba(0,0,0,.1),
-    //              0 1px 3px rgba(0,0,0,.3),
-    //              0 3px 5px rgba(0,0,0,.2),
-    //              0 5px 10px rgba(0,0,0,.25),
-    //              0 10px 10px rgba(0,0,0,.6),
-    //              0 20px 20px rgba(0,0,0,.15);
-    font-size: 1.2em;
-    background-color: #fff;
+    margin: 1.5% 0;
+    width: 45%;
   }
   h1 span.title span.accent {
     color: $primary;
@@ -399,11 +384,14 @@ body {
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 850px) {
   body {
     header {
       height: auto;
       padding-bottom: 25%;
+      img.title {
+        width: 100%;
+      }
     }
   }
 }
@@ -424,9 +412,9 @@ body {
         }
       }
     }
-    h1 span.title {
-      font-size: 1em;
-    }
+    // h1 span.title {
+    //   font-size: 1em;
+    // }
     h1 span.accent {
       color: $primary;
     }
