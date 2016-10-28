@@ -4,7 +4,7 @@ email: martin.laws@indexexchange.com
 title: Hack Index
 
 # standard jekyll configuration
-url: http://martinlaws.github.io
+url: http://indexexchange.github.io
 baseurl: /hackathon
 
 exclude:
