@@ -442,19 +442,20 @@ body {
   .careers {
     margin-top: 2%;
     width: 100vw;
-    height: 22.5vh;
+    min-height: 22.5vh;
     background-image: url(../images/careers_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     section {
-      padding-top: 4.5vh;
+      padding: 1.5% 0;
       h5 {
-        font-weight: bold;
+        font-family: $semibold-font;
         color: #fff;
       }
       .button.button-primary {
+        font-family: $semibold-font;
         background-color: $primary;
         border-color: $primary;
       }
