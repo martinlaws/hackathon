@@ -171,6 +171,48 @@ body {
         }
       }
     }
+    .container.faq {
+      section {
+        justify-content: space-between;
+        .tabs {
+          list-style-type: none;
+          li {
+            width: 95%;
+            padding-left: 5%;
+            cursor: pointer;
+            margin-bottom: 0.75rem;
+            h5 {
+              text-transform: none;
+              color: $body-font-color;
+              margin-bottom: 0;
+            }
+            h5:hover {
+              color: $secondary;
+              text-decoration: underline;
+            }
+          }
+          li.current {
+            background-color: #fff;
+            h5 {
+              color: $secondary;
+            }
+          }
+        }
+        .tab-content {
+          display: none;
+          flex-basis: 65%;
+          padding: 2%;
+          h5 {
+            text-transform: none;
+            font-size: 2.2rem;
+          }
+        }
+        .tab-content.current {
+          display: block;
+          background-color: #fff;
+        }
+      }
+    }
     section.prizes {
       padding: 3vh 27vw;
       display: flex;
@@ -361,6 +403,7 @@ body {
     }
   }
   .careers {
+    margin-top: 2%;
     width: 100vw;
     height: 22.5vh;
     background-image: url(../images/careers_background.jpg);
@@ -393,6 +436,19 @@ body {
       padding-bottom: 25%;
       img.title {
         width: 100%;
+      }
+    }
+    .master-container {
+      .container.faq {
+        section {
+          justify-content: column;
+          .tabs {
+            list-style-type: none;
+            li {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
