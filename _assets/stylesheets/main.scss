@@ -104,10 +104,10 @@ body {
     .countdown-container {
       margin: auto;
       .countdown {
-        padding: 0.5vh 2.5vw;
+        padding: 0;
         border: 3px solid #fff;
         margin: 2.5% auto auto auto;
-        width: 37.5vw;
+        width: 35%;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -402,40 +402,107 @@ body {
           margin: auto;
         }
       }
-      section.registration {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        background-color: $primary;
-        margin-left: -25vw;
-        width: 100vw;
-        article {
-          width: 43vh;
-          padding: 3vh 3vw;
-          color: #fff;
-
-        }
-      }
     }
-    div.registration-info{
-      background-color: rebeccapurple;
-      width: 100vw;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      margin: 0 0 20vh 0;
-      .individual {
-        background-color: green;
-        height: 25vh;
-        display: inline-block;
-        width: 50vw;
-      }
-      .team {
-        background-color: red;
-        height: 25vh;
-        display: inline-block;
-        width: 50vw;
+    .registration-container {
+      margin: 0;
+      section {
+        background-color: $primary;
+        width: 100vw;
+        text-align: center;
+        .ribbon {
+          margin: 0.75% auto;
+          background-color: #fff;
+          width: 15%;
+          position: relative;
+          aside {
+            &.ribbon-left, &.ribbon-right {
+              width: 5%;
+              background-color: $primary;
+              position: absolute;
+              height: 100%;
+              top: 0;
+            }
+            &.ribbon-left {
+              left: 0;
+              &:before, &:after {
+                width: 60%;
+                height: 50%;
+                position: absolute;
+                left: 100%;
+                content: "";
+              }
+              &:before {
+                top: 0%;
+                background: linear-gradient(to right top, $primary 50%, transparent 50%)
+              }
+              &:after {
+                top: 50%;
+                background: linear-gradient(to right bottom, $primary 50%, transparent 50%)
+              }
+            }
+            &.ribbon-right {
+              right: 0;
+              &:before, &:after {
+                width: 60%;
+                height: 50%;
+                position: absolute;
+                right: 100%;
+                content: "";
+              }
+              &:before {
+                top: 0%;
+                background: linear-gradient(to left top, $primary 50%, transparent 50%)
+              }
+              &:after {
+                top: 50%;
+                background: linear-gradient(to left bottom, $primary 50%, transparent 50%)
+              }
+            }
+          }
+          h5 {
+            font-family: $semibold-font;
+            margin: 0.5% auto;
+            color: $primary;
+            padding: 0 2%;
+          }
+        }
+        .registration-section {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 2.5%;
+          article {
+            flex-basis: 31.5%;
+            padding: 3vh 3vw;
+            color: #fff;
+            h6 {
+              font-family: $semibold-font;
+              font-size: 1.2em;
+            }
+            .register-block {
+              display: flex;
+              flex-flow: row;
+              justify-content: space-between;
+              .text {
+                text-align: left;
+                p {
+                  margin-right: 5%;
+                }
+                h6 {
+                  font-family: $semibold-font;
+                  font-size: 1em;
+                  margin-bottom: 0;
+                }
+              }
+              img {
+                width: 25%;
+                height: 25%;
+              }
+            }
+            // &.
+          }
+        }
       }
     }
   }
@@ -477,13 +544,30 @@ body {
       }
     }
     .master-container {
-      .container.faq {
-        section {
-          justify-content: column;
-          .tabs {
-            list-style-type: none;
-            li {
-              width: 100%;
+      .container {
+        &.faq {
+          section {
+            justify-content: column;
+            .tabs {
+              list-style-type: none;
+              li {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &.registration-container {
+          section {
+            .registration-section {
+              flex-flow: column;
+              article .register-block {
+                flex-flow: column;
+                img {
+                  width: 40%;
+                  margin: auto;
+                  max-width: 75%;
+                }
+              }
             }
           }
         }
@@ -542,12 +626,12 @@ body {
               width: 75vw;
             }
           }
-          &.registration {
-            margin-left: -7.5vw;
-            article {
-              width: 100%;
-            }
-          }
+          // &.registration {
+          //   margin-left: -7.5vw;
+          //   article {
+          //     width: 100%;
+          //   }
+          // }
         }
         .prizes {
           width: 100%;
@@ -564,6 +648,9 @@ body {
             }
           }
         }
+      }
+      .container {
+        padding: 0;
       }
     }
   }
