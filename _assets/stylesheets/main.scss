@@ -65,7 +65,7 @@ body {
           color: $secondary;
         }
         a.button.button-primary {
-          text-transform: none;
+          text-transform: capitalize;
           font-family: $nav-button-font;
           font-size: $nav-button-font-size;
           margin-right: 1vw;
@@ -156,18 +156,14 @@ body {
         .highlight a{
           background-color: $secondary;
           color: #fff;
-          font-weight: 600;
+          font-family: $body-highlight-font;
           font-style: italic;
           font-size: 1.05em;
-          padding: 0 1.5%;
+          padding: 0.5% 1.5% 0;
           text-decoration: none;
         }
         .highlight a:hover {
           background-color: $primary;
-          color: #fff;
-          font-weight: 600;
-          font-size: 1.05em;
-          padding: 0 1.5%;
         }
       }
     }
@@ -178,7 +174,7 @@ body {
           list-style-type: none;
           li {
             width: 95%;
-            padding-left: 5%;
+            padding: 1% 5% 0;
             cursor: pointer;
             margin-bottom: 0.75rem;
             h5 {
@@ -205,6 +201,11 @@ body {
           h5 {
             text-transform: none;
             font-size: 2.2rem;
+          }
+          ul {
+            list-style-type: disc;
+            margin-left: 5%;
+            list-style-position: outside;
           }
         }
         .tab-content.current {
@@ -274,7 +275,7 @@ body {
       }
       article {
         h5 {
-          font-family: $body-font;
+          font-family: $subheading-font;
           text-transform: uppercase;
           font-weight: 700;
           font-size: 1.1em;

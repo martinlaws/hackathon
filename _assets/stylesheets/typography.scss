@@ -1,24 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:400,600i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+
+// Load Custom Fonts
+@font-face {
+  font-family: AdelleSans-Light;
+  src:url('../fonts/AdelleSans-Light.otf');
+}
+@font-face {
+  font-family: AdelleSans-Semibold;
+  src:url('../fonts/AdelleSans-Semibold.otf');
+}
+@font-face {
+  font-family: AdelleSans-Bold;
+  src:url('../fonts/AdelleSans-Bold.otf');
+}
+@font-face {
+  font-family: AdelleSans-SemiboldItalic;
+  src:url('../fonts/AdelleSans-SemiboldItalic.otf');
+}
 
 // Headings
 $site-title-font: 'Bungee Inline', Helvetica, sans-serif;
 $section-title-font: 'Bungee Inline', Helvetica, sans-serif;
+$subheading-font: 'AdelleSans-Bold', sans-serif;
 
 // Navigation Bar
 $primary-nav-font: 'Bungee Inline', Helvetica, sans-serif;
 $primary-nav-color: #000;
 $primary-nav-background-color: #fff;
 $nav-item-size: 0.95em;
-$nav-button-font: 'Source Sans Pro', sans-serif;
-$nav-button-font-size: 1.1em;
+$nav-button-font: 'AdelleSans-Semibold', sans-serif;
+$nav-button-font-size: 1.05em;
 
 // Countdown Timer
-$countdown-label-font: 'Source Sans Pro', sans-serif;
+$countdown-label-font: 'AdelleSans-Semibold', sans-serif;
 $countdown-number-size: 2.5em;
 $countdown-label-size: 0.75em;
 $countdown-color: #fff;
 
 // Body
-$body-font: 'Source Sans Pro', sans-serif;
+$body-font: 'AdelleSans-Light', sans-serif;
 $body-font-size: 1em;
 $body-font-color: #222;
+$body-highlight-font: 'AdelleSans-SemiboldItalic', sans-serif;
