@@ -574,11 +574,16 @@ body {
                 .register-block {
                   flex-flow: column;
                   img {
-                    width: 40%;
+                    max-width: 40%;
                     margin: auto;
-                    max-width: 75%;
                   }
                 }
+              }
+            }
+            .ribbon {
+              width: 40%;
+              h5 {
+
               }
             }
             .button-primary {
