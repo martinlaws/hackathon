@@ -411,6 +411,7 @@ body {
         text-align: center;
         .button-primary {
           margin: 1% auto;
+          font-family: $semibold-font;
         }
         .ribbon {
           margin: 0.75% auto;
@@ -566,17 +567,23 @@ body {
             .registration-section {
               flex-flow: column;
               justify-content: space-between;
-              article .register-block {
-                flex-flow: column;
-                img {
-                  width: 40%;
-                  margin: auto;
-                  max-width: 75%;
+              article {
+                &:first-of-type {
+                  border: 0;
+                }
+                .register-block {
+                  flex-flow: column;
+                  img {
+                    width: 40%;
+                    margin: auto;
+                    max-width: 75%;
+                  }
                 }
               }
             }
             .button-primary {
               width: 45%;
+              margin-bottom: 3%;
             }
           }
         }
