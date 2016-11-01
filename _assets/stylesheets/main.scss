@@ -409,6 +409,9 @@ body {
         background-color: $primary;
         width: 100vw;
         text-align: center;
+        .button-primary {
+          margin: 1% auto;
+        }
         .ribbon {
           margin: 0.75% auto;
           background-color: #fff;
@@ -471,11 +474,13 @@ body {
           flex-flow: row wrap;
           align-items: center;
           justify-content: center;
-          padding-bottom: 2.5%;
           article {
             flex-basis: 31.5%;
             padding: 3vh 3vw;
             color: #fff;
+            &:first-of-type {
+              border-right: 1px solid #fff;
+            }
             h6 {
               font-family: $semibold-font;
               font-size: 1.2em;
@@ -560,6 +565,7 @@ body {
           section {
             .registration-section {
               flex-flow: column;
+              justify-content: space-between;
               article .register-block {
                 flex-flow: column;
                 img {
