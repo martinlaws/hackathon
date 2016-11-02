@@ -15,6 +15,7 @@ body {
   a.button.button-primary {
     background-color: $secondary;
     border-color: $secondary;
+    transition: all 0.3s ease;
   }
   a.button.button-primary:hover {
     background-color: lighten($secondary, 10%);
@@ -60,6 +61,7 @@ body {
           text-decoration: none;
           padding: 0 0.5vw;
           margin: 1vh 0.5vw;
+          transition: all 0.15s ease-in-out;
         }
         a:hover {
           color: $secondary;
@@ -154,7 +156,7 @@ body {
       background-color: #fff;
       padding: 3vh 3vw;
       article {
-        .highlight a{
+        .highlight a {
           background-color: $secondary;
           color: #fff;
           font-family: $body-highlight-font;
@@ -162,6 +164,7 @@ body {
           font-size: 1.05em;
           padding: 0.5% 1.5% 0;
           text-decoration: none;
+          transition: all 0.15s ease-in-out;
         }
         .highlight a:hover {
           background-color: $primary;
@@ -219,6 +222,7 @@ body {
             color: #fff;
             text-decoration: none;
             padding: 0.5% 1% 0;
+            transition: all 0.15s ease-in-out;
             &:hover {
               background-color: $primary;
               text-decoration: underline;
