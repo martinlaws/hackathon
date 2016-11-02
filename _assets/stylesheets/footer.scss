@@ -25,10 +25,10 @@ footer {
           font-family: $semibold-font;
           padding-right: 3vw;
           text-decoration: none;
+          transition: all 0.1s ease-in-out;
         }
         li > a:hover {
           color: $secondary;
-          transition: all 0.1s ease-in-out;
         }
       }
       .social {
