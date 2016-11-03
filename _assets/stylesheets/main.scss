@@ -420,7 +420,8 @@ body {
         .ribbon {
           margin: 0.75% auto;
           background-color: #fff;
-          width: 15%;
+          width: 40%;
+          padding: 0 2%;
           position: relative;
           aside {
             &.ribbon-left, &.ribbon-right {
@@ -585,7 +586,8 @@ body {
               }
             }
             .ribbon {
-              width: 40%;
+              width: 75%;
+              padding: 0 10%;
               h5 {
 
               }
