@@ -16,10 +16,14 @@ body {
     background-color: $secondary;
     border-color: $secondary;
     transition: all 0.3s ease;
-  }
-  a.button.button-primary:hover {
-    background-color: lighten($secondary, 10%);
-    border-color: lighten($secondary, 10%);
+    &:visited {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+    &:hover {
+      background-color: lighten($secondary, 10%);
+      border-color: lighten($secondary, 10%);
+    }
   }
   font-family: $body-font;
   img.title {
