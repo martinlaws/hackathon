@@ -31,9 +31,6 @@ body {
     margin: 1.5% 0;
     width: 45%;
   }
-  h1 span.title span.accent {
-    color: $primary;
-  }
   h3, h5.dates {
     font-family: $section-title-font;
     span.day-1 {
@@ -630,9 +627,6 @@ body {
           }
         }
       }
-    }
-    h1 span.accent {
-      color: $primary;
     }
     .master-container {
       .container, .panel {
