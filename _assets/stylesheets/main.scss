@@ -199,7 +199,7 @@ body {
             }
           }
         }
-        .tab-content {
+        .faq-tab-content {
           display: none;
           flex-basis: 65%;
           padding: 2%;
@@ -214,7 +214,7 @@ body {
             list-style-position: outside;
           }
         }
-        .tab-content.current {
+        .faq-tab-content.current {
           display: block;
           background-color: #fff;
           .highlight {
@@ -394,6 +394,40 @@ body {
         article p {
           color: $body-font-color;
           font-family: $body-font;
+        }
+        .sched-tab-content {
+          display: none;
+          flex-basis: 65%;
+          padding: 2%;
+          h5 {
+            text-transform: none;
+            font-size: 2.2rem;
+            margin-bottom: 1%;
+          }
+          ul {
+            list-style-type: disc;
+            margin-left: 5%;
+            list-style-position: outside;
+          }
+        }
+        .sched-tab-content.current {
+          display: block;
+          background-color: #fff;
+          .highlight {
+            background-color: $secondary;
+            font-family: $body-highlight-font;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5% 1% 0;
+            transition: all 0.15s ease-in-out;
+            &:hover {
+              background-color: $primary;
+              text-decoration: underline;
+            }
+          }
+          img {
+            max-width: 100%;
+          }
         }
       }
       section.single {
