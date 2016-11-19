@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("li").countdown("2016/11/18 19:00", function(event) {
+  $("li").countdown("2016/11/20 16:00", function(event) {
     $('li.days span').html(
       event.strftime('%D') + '<span> Days</span>'
     );
